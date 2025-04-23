@@ -62,7 +62,7 @@ This is not just for loaders, but for all route module APIs: loaders, actions, c
 
 ## 3. Throw data in loaders/actions
 
-There are exceptions to the rule in #2, especially 404s. You can intentionally `throw data()` (with a proper status code) to the closest error boundary when your loader can't find what it needs to render the page. Throw a 404 and move on.
+There are exceptions to the rule in #2, especially 404s. You can intentionally `throw data()` (with a proper status code) to the closest error boundary when your loader/action can't find what it needs to render the page. Throw a 404 and move on.
 
 ```tsx
 import { data } from "react-router";
